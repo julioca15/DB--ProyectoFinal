@@ -1,0 +1,9 @@
+{
+	"name": "jalvaradoc-datafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "09b5e428-56ad-483b-9c2f-73899f02cd38",
+		"tenantId": "3eda5110-125d-44e5-bef6-e46d008f58f1"
+	}
+}
