@@ -1,0 +1,14 @@
+{
+	"name": "DataFactory_Databricks",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "conector entre los servicios de datafactory y Azure Databricks",
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-221604755226325.5.azuredatabricks.net",
+			"existingClusterId": "1203-002221-4xyw1ytu",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDk3Q0NCMjMwLTI4NzMtNEVGRC04RDI3LTY1QzY5RDZCOTE5OF9lOGEwMDliMS1mM2YwLTQxMWQtYjdiYi03MmMzNjMxYjE1NzYiDQp9"
+		}
+	}
+}
