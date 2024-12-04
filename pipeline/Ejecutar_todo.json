@@ -1,6 +1,39 @@
 {
 	"name": "Ejecutar_todo",
 	"properties": {
+		"activities": [
+			{
+				"name": "Exec_IngestBronce",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Exec_Transform",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Exec_IngestBronce",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"waitOnCompletion": true
+				}
+			}
+		],
 		"annotations": []
 	}
 }
