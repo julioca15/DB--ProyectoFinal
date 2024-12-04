@@ -1,0 +1,25 @@
+{
+	"name": "Ejecucion programada",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Ejecutar_todo",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2024-12-04T23:00:00",
+				"endTime": "2024-12-07T23:23:00",
+				"timeZone": "SA Pacific Standard Time"
+			}
+		}
+	}
+}
